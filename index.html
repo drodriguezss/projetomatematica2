@@ -170,7 +170,15 @@ Profundidade 74,8 cm<p><img class="imagemgeladeira" src="/home/aluno/Downloads/p
                     </p><img class="imagemchuveiro" src="/home/aluno/Downloads/projeto dafny/imagens/chuveiro.jpeg">
                 <p></p>
             <p></p>
-
+            <h1>Calculadora de Consumo de Energia Elétrica</h1>
+            <form>
+                <label>Potência (W): <input type="number" id="potencia"></label><br>
+                <label>Tempo de uso (horas por dia): <input type="number" id="tempo"></label><br>
+                <label>Período de uso (dias por mês): <input type="number" id="periodo"></label><br>
+                <label>Taxa de consumo (R$/kWh): <input type="number" id="taxa"></label><br>
+                <button type="button" onclick="calcularConsumo()">Calcular</button>
+            </form>
+            <div id="resultado"></div>
             <!-- More content goes here -->
         </article>
     </main>

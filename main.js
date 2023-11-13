@@ -53,3 +53,16 @@ function calcularAreaCone() {
     const area = Math.PI * raio * (raio + geratriz);
     document.getElementById("coneResultado").textContent = `Área do Cone: ${area}`;
 }
+
+function calcularConsumo() {
+    const potencia = parseFloat(document.getElementById('potencia').value);
+    const tempo = parseFloat(document.getElementById('tempo').value);
+    const periodo = parseFloat(document.getElementById('periodo').value);
+    const taxa = parseFloat(document.getElementById('taxa').value);
+
+    const energia = (potencia * tempo * periodo) / 1000;
+    const custo = taxa * energia;
+
+    const resultado = `Consumo de Energia: ${energia.toFixed(2)} kWh<br>Custo: R$ ${custo.toFixed(2)}`;
+    document.getElementById('resultado').innerHTML = resultado;
+}
